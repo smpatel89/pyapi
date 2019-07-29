@@ -1,0 +1,1 @@
+[{"app": "nova", "service": "compute"}, {"app": "neutron", "service": "network"}, {"app": "cinder", "service": "block"}, {"app": "swift", "service": "object"}]

@@ -4,3 +4,5 @@
   service: network
 - app: cinder
   service: block
+- app: swift
+  service: object
