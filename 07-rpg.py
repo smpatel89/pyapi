@@ -20,8 +20,8 @@ def showStatus():
         print('You see a ' + rooms[currentRoom]['item'])
     print('------------------------')
 
-'''Test'''
 
+'''Test2'''
 inventory = []
 rooms = {
         'Hall': {
