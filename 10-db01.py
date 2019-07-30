@@ -18,5 +18,11 @@ except Exception as e:
     print(f'Table creation error - {e}')
 else:
     print('Table created successfully')
-finally:
-    conn.close()
+
+conn.execute(\
+        ''' INSERT INTO company                             ''' \
+        '''   (id, name, age, address, salary)              ''' \
+        ''' VALUES(1, "Paul", 32, "California", 200000.00); '''
+        )
+conn.commit()
+conn.close()
