@@ -28,11 +28,11 @@ def get_got():
 
     print(f'Number of houses: {len(houses)}')
     print(f'House example:')
-    ret = []
+    ret = ''
     for i in range(10):
-        ret.append(houses[i+13]["name"] ,houses[i+13]["region"])
-        print(f'\t{houses[i+13]["name"]} - Location {houses[i+13]["region"]}')
-        print(f'\tOverlord: {houses[i+13]["overlord"]}')
+        ret += f'<br>{houses[i+13]["name"]} - {houses[i+13]["region"]}'
+        #print(f'\t{houses[i+13]["name"]} - Location {houses[i+13]["region"]}')
+        #print(f'\tOverlord: {houses[i+13]["overlord"]}')
 
     return ret
 

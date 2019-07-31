@@ -28,12 +28,13 @@ def get_got():
 
     print(f'Number of houses: {len(houses)}')
     print(f'House example:')
-    ret = []
-    for i in range(10):
-        ret.append([houses[i+13]["name"] ,houses[i+13]["region"]])
-        #ret.append(f'{houses[i+13]["name"]} from {houses[i+13]["region"]}')
-        #print(f'\t{houses[i+13]["name"]} - Location {houses[i+13]["region"]}')
-        #print(f'\tOverlord: {houses[i+13]["overlord"]}')
+
+    ret = ''
+    for i in range(len(houses)):
+        if houses[i]["region"] is None:
+            ret += f'<br>{houses[i]["name"]} - WHO KNOWS'
+        else:
+            ret += f'<br>{houses[i]["name"]} - {houses[i]["region"]}'
 
     return ret
 
