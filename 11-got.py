@@ -28,8 +28,9 @@ def main():
 
     print(f'Number of houses: {len(houses)}')
     print(f'House example:')
-    print(f'\t{houses[10]["name"]} - Location {houses[10]["region"]}')
-    print(f'\tOverlord: {houses[10]["overlord"]}')
+    for i in range(3):
+        print(f'\t{houses[i+13]["name"]} - Location {houses[i+13]["region"]}')
+        print(f'\tOverlord: {houses[i+13]["overlord"]}')
 
 if __name__ == '__main__':
     main()
